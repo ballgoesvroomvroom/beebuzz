@@ -63,13 +63,14 @@ class Database {
 
 class Session {
 	constructor() {
+		// get a copy
 		this.words = Database.getWords();
 
 		// jumble up array
 		var upperLimit = this.words.length;
-		for (let i = 0; i < this.words /2; i++) {
+		for (let i = 0; i < this.words.length /2; i++) {
 			var [a, b] = [Math.floor(Math.random() *upperLimit), Math.floor(Math.random() *upperLimit)];
-			[this.words[a], this.words[b]] = [this.words[b], this.words[a]]
+			[this.words[a], this.words[b]] = [this.words[b], this.words[a]];
 		}
 	}
 
