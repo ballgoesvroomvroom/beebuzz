@@ -82,7 +82,7 @@ $(document).ready(async function() {
 
 	function renderWord(word, source) {
 		// clears answer box too
-		$selectors["prompt"].text(word);
+		$selectors["prompt"].text(`[ ${word} ]`);
 		$selectors["source"].text(source);
 
 		$selectors["answer"].html("&nbsp");
