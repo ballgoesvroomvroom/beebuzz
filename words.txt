@@ -1,0 +1,174 @@
+wise : 智慧 : 12
+forgiving : 宽容大量 : 13
+self centered : 自私/自我为中心 : 14
+adamant : 我行我素 : 15
+perseverance : 坚持到底/有毅力/有恒心 : 16
+positive : 乐观、正面积极 : 17
+charismatic : 有魅力 : 6
+extroverted : 外向 : 7
+introverted : 内向 : 8
+easy going : 随和 : 9
+aggressive : 好胜 : 10
+shy : 害羞 : 11
+calm : 冷静 : 1
+impulsive : 冲动 : 2
+arrogant : 傲慢/骄傲 : 3
+humble : 谦虚/谦卑 : 4
+eccentric : 古怪 : 5
+negative : 悲观消极 : 18
+strong sense of pride : 自尊心强 : 19
+easily contented: 知足常乐 : 20
+be contented in poverty and devote to things spiritual; live contentedly as a poor scholar; happy to lead a simple virtuous life : 安贫乐道 : 21
+speculate and take advantage of opportunity; resort to dubious shifts to further one’s interest; seize every chance to gain advantage by trickery : 投机取巧 : 22
+change one’s view according to circumstances jump on the bandwagon : 见风使舵 : 23
+resourceful; be wise and full of stratagems : 足智多谋 : 24
+kind hearted and helpful : 有爱心、乐于助人 : 27
+filial : 孝顺 : 28
+irresponsible : 没有责任感/敷衍塞责 : 29
+ungrateful : 忘恩负义 : 30
+disciplined : 有自律的人 : 31
+kind : 善良 : 32 
+honest : 诚实 : 33
+strong-willed : 坚强 : 34
+courageous : 勇敢 : 35
+generous, not stingy : 慷慨大方 : 36
+stubborn : 固执 : 37
+keep to his words : 有诚信 : 38
+patient : 耐心 : 39
+full of loving kindness, usually refers to the love of parents/adults to their children or teachers to their students : 慈爱 : 40
+expect nothing in return : 不图回报 : 41
+easily suspicious of things : 疑心重 : 42
+temperamental / frequent mood swings : 情绪化 : 43
+bad tempered : 性格暴躁 : 44
+humorous : 风趣、幽默 : 45
+ethereal : 虚幻飘渺 : translate.google.com
+like a cannonball : 连珠炮似地 : translate.google.com
+act without distractions : 行无旁骛 : translate.google.com
+without permission : 未经允许 : translate.google.com
+without : 未经 : translate.google.com
+in general : 泛言 : translate.google.com
+tricky : 取巧 : translate.google.com
+statement : 陈述 : translate.google.com
+unwavering : 毫不动摇 : translate.google.com
+undoubtedly : 无疑 : translate.google.com
+murmur : 呢喃 : translate.google.com
+worthy : 堪 : translate.google.com
+contribute : 贡献 : translate.google.com
+absent-minded : 心不在焉 : translate.google.com
+colorful : 五彩缤纷 : translate.google.com
+funny : 滑稽 : translate.google.com
+confrontation : 对抗 : translate.google.com
+program : 程序 : translate.google.com
+resounding : 响彻 : translate.google.com
+familiar with : 熟悉 : translate.google.com
+bright : 鲜艳 : translate.google.com
+disgusting : 讨人嫌 : translate.google.com
+hypocritical : 虚伪 : translate.google.com
+authorities : 当局 : translate.google.com
+dislike : 嫌弃 : translate.google.com
+make complaints : 吐槽 : translate.google.com
+preference : 偏好 : translate.google.com
+a lot of people : 人声鼎沸 : translate.google.com
+loyalty : 义气 : translate.google.com
+serious : 严肃 : translate.google.com
+plain and boring : 平淡无味 : translate.google.com
+actively : 踊跃 : translate.google.com
+pros and cons : 利与弊 : translate.google.com
+meet : 交汇 : translate.google.com
+stereotypes : 刻板印象 : translate.google.com
+occlude : 遮挡 : translate.google.com
+abundant : 充裕 : translate.google.com
+my country environment agency : 我国环境局 : translate.google.com
+chairman : 主席 : translate.google.com
+give : 给予 : translate.google.com
+expected : 预期 : translate.google.com
+tourists flock in : 游客络绎不绝地进入 : translate.google.com
+central : 中央 : translate.google.com
+the hall is full of people : 大厅人声鼎沸 : translate.google.com
+severe : 严峻 : translate.google.com
+prosperity : 繁荣富强 : translate.google.com
+widely used : 广泛使用 : translate.google.com
+free time : 暇时 : translate.google.com
+from time to time : 时不时 : translate.google.com
+excitation : 激发 : translate.google.com
+right : 权利 : translate.google.com
+go sightseeing : 观光 : translate.google.com
+prosperity : 繁荣 : translate.google.com
+extraordinary : 非凡 : translate.google.com
+wronged : 委屈 : translate.google.com
+bright sun : 艳阳高照 : translate.google.com
+broad play space : 广阔的发挥空间 : translate.google.com
+broad : 广阔 : translate.google.com
+narrow-minded idea : 挟隘的想法 : translate.google.com
+hold on : 挟隘 : translate.google.com
+constraint : 约束 : translate.google.com
+indecisive : 犹豫不决 : translate.google.com
+unforgettable : 刻骨铭心 : translate.google.com
+potential : 潜能 : translate.google.com
+regain confidence : 重拾信心 : translate.google.com
+crying face : 哭丧着脸 : translate.google.com
+not to be underestimated : 不容小视 : translate.google.com
+no comment : 无可奉告 : translate.google.com
+situation : 状况 : translate.google.com
+an endless stream : 络绎不绝 : translate.google.com
+negotiate : 交涉 : translate.google.com
+nod : 点头致意 : translate.google.com
+sharp-eyed : 目光敏锐 : translate.google.com
+know well : 胸有成竹 : translate.google.com
+heyday : 全盛时期 : translate.google.com
+introduce : 引入 : translate.google.com
+sphere of influence : 势力范围 : translate.google.com
+reason : 缘故 : translate.google.com
+excited : 兴致勃勃 : translate.google.com
+bustling : 熙熙攘攘 : translate.google.com
+bustling with smiles gladly : 欣然微笑的熙来攘往 : translate.google.com
+bustling : 熙来攘往 : translate.google.com
+nonsense : 信口胡诌 : translate.google.com
+put the cart before the horse : 本末倒置 : translate.google.com
+express : 表示 : translate.google.com
+exhibit : 展示 : translate.google.com
+bored : 腻烦 : translate.google.com
+bored : 厌烦 : translate.google.com
+expected that : 预料到 : translate.google.com
+has been hidden deep in my heart : 已经被藏进了内心深处 : translate.google.com
+vague wish : 渺茫愿望 : translate.google.com
+frustrated thinking : 沮丧地想 : translate.google.com
+sigh : 叹息 : translate.google.com
+inside closed door : 关闭的房门内 : translate.google.com
+bad words : 恶言恶语 : translate.google.com
+it's not true : 并非如此 : translate.google.com
+for a moment : 一瞬间 : translate.google.com
+air conditioner indoor unit : 空调室内机 : translate.google.com
+original place : 原处 : translate.google.com
+saving : 节约 : translate.google.com
+on the display : 显示屏上 : translate.google.com
+show : 显示 : translate.google.com
+as well as : 亦 : translate.google.com
+at this point : 事已至此 : translate.google.com
+scale : 规模 : translate.google.com
+filling : 充盈 : translate.google.com
+frequency : 频率 : translate.google.com
+safe and sound : 安然无恙 : translate.google.com
+sit tight : 正襟危坐 : translate.google.com
+upright : 正襟 : translate.google.com
+outstanding : 杰出的 : translate.google.com
+helpless : 无可奈何 : translate.google.com
+turn a blind eye : 视而不见 : translate.google.com
+one by one : 逐个 : translate.google.com
+rack your brains : 绞尽脑汁 : translate.google.com
+she is so worried : 她万般烦忧 : translate.google.com
+analyze : 分析 : translate.google.com
+can be dismissive : 可以不屑一顾 : translate.google.com
+never stop : 一刻也不消停 : translate.google.com
+helpless : 束手无策 : translate.google.com
+dead end : 死胡同 : translate.google.com
+the color of the handwriting has faded : 字迹颜色浅淡已经 : translate.google.com
+lightly : 浅淡 : translate.google.com
+trace color : 迹颜色 : translate.google.com
+research : 研究 : translate.google.com
+standing in front of that door : 站在那扇门前 : translate.google.com
+north end : 北端 : translate.google.com
+ignore : 置之不理 : translate.google.com
+abnormal change : 异常变化 : translate.google.com
+dig your own grave : 自掘坟墓 : translate.google.com
+gloat : 幸灾乐祸 : translate.google.com
