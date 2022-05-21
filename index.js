@@ -126,8 +126,8 @@ $(document).ready(async function() {
 	}
 
 	$(document).on("keydown", e => {
-		if (e.keyCode == 13) {
-			// enter key
+		if (e.keyCode == 13 || e.keyCode == 32) {
+			// enter key (13) or space (32)
 			e.preventDefault();
 			nextWord();
 		}
