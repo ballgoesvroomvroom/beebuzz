@@ -18,7 +18,7 @@ const app = http.createServer((req, res) => {
 		res.setHeader("Content-Type", "text/html");
 		res.write(html);
 	} else if (req.url == "/api/words") {
-		res.setHeader("Content-Type", "text/plain");
+		res.setHeader("Content-Type", "text/plain; charset=utf-8");
 		res.write(words);
 	}
 	res.end();
