@@ -54,7 +54,7 @@ class Session {
 	}
 
 	nextWord() {
-		// returns the english prompt, answer in chinese and source
+		// returns a promise that returns the english prompt, answer in chinese, source, and pinyin
 
 		if (this.words.length === 0) {
 			// session expired; no more words
@@ -63,7 +63,23 @@ class Session {
 			var a = this.words[this.words.length -1];
 			this.words.pop(); // more performant than .shift() apparently
 
-			return a.split(/\s*:\s*/gm);
+			let d = a.split(/\s*:\s*/gm);
+			console.log(d[1], {"word": d[1]})
+			return fetch("/api/pinyin/?q=" +d[1], {
+				method: "GET"
+			}).then(r => {
+				if (r.status == 200) {
+					// server will return "" if cannot find the pinyin for the word specified or malformed input etc
+					// just not an error status code
+					return r.text();
+				} else {
+					console.log("server returned status code != 200 while querying for pinyin")
+					return ""
+				}
+			}).then(pinyin => {
+				d.push(pinyin);
+				return d;
+			})
 		}
 	}
 }
@@ -80,6 +96,8 @@ $(document).ready(async function() {
 	let cache; // stores the previously returned result by sessionObject.newWord()
 	let state = 0; // haven't start; 1 - started (no answers displayed); 2 - answer displayed
 
+	let triggered = false; // debounce value
+						 
 	function renderWord(word, source) {
 		// clears answer box too
 		$selectors["prompt"].text(`[ ${word} ]`);
@@ -92,7 +110,12 @@ $(document).ready(async function() {
 		$selectors["answer"].text(answer);
 	}
 
-	async function nextWord() {
+	async function nextWord(...forced) {
+		if (triggered && (forced.length === 0 || forced[0] == false)) {
+			return;
+		}
+
+		triggered = true;
 		switch (state) {
 			case 0:
 				sessionObject = new Session();
@@ -100,26 +123,36 @@ $(document).ready(async function() {
 					// check first to prevent a recursive loop from occurring if case 2 triggered this callback
 					console.error("created session is empty on initialisation");
 					return;
+
+					// don't reset debounce
 				}
 
-				state = 2
-				nextWord(); // recall it
+				state = 2;
+				nextWord(true); // recall it (true to bypass debounce)
 
 				break
 			case 1:
 				renderAnswer(cache[1]);
 				state = 2;
 
+				triggered = false; // reset debounce
+
 				break
 			case 2:
 				if (await sessionObject.isEmpty()) {
 					// careful, might trigger a recursive chain if condition isn't handled properly
 					state = 0;
-					return nextWord();
+					return nextWord(true);
 				}
-				cache = sessionObject.nextWord();
-				renderWord(cache[0], cache[2]);
-				state = 1;
+				sessionObject.nextWord().then(d => {
+					cache = d;
+					console.log(d)
+
+					renderWord(d[0], d[2]);
+					state = 1;
+
+					triggered = false; // reset debounce
+				});
 
 				break
 		}
