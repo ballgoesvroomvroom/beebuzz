@@ -10,7 +10,6 @@ const js = fs.readFileSync(__dirname +"/index.js", "utf-8");
 const words = fs.readFileSync(__dirname +"/words.txt", "utf-8");
 
 const app = http.createServer((req, res) => {
-	console.log(req.url, req.url.startsWith("/api/pinyin/?q="));
 	if (req.url == "/index.js") {
 		res.setHeader("Content-Type", "application/javascript");
 		res.write(js);
@@ -30,6 +29,26 @@ const app = http.createServer((req, res) => {
 
 		var py = pinyin_lookup[query];
 		if (py == null) {
+			// no pinyin matching for this query (could be a very odd phrase)
+			// fallback to matching pinyin for individual word, not accurate (will implement another method soon)
+			var individual_py = ""; // build new pinyin
+			for (let i = 0; i < query.length; i++) {
+				var char = query[i]; // individual character from the query
+
+				var char_py = pinyin_lookup[char];
+				if (char_py == null) {
+					individual_py += "- "; // represent not found for this word
+				} else {
+					individual_py += char_py +" ";
+				}
+			}
+
+			py = individual_py.slice(0, -1); // remove trailing whitespace from last iteration
+		}
+
+		console.log(query, py)
+		if (py == null) {
+			// shouldn't be null no more, at most just dashes
 			res.write("");
 		} else {
 			res.write(py);

@@ -64,7 +64,6 @@ class Session {
 			this.words.pop(); // more performant than .shift() apparently
 
 			let d = a.split(/\s*:\s*/gm);
-			console.log(d[1], {"word": d[1]})
 			return fetch("/api/pinyin/?q=" +d[1], {
 				method: "GET"
 			}).then(r => {
@@ -106,8 +105,8 @@ $(document).ready(async function() {
 		$selectors["source"].text(source);
 
 		// $selectors["answer"].html("&nbsp");
-		$selectors["answerbox"].text();
-		$selectors["pinyin"].text();
+		$selectors["answerbox"].text("");
+		$selectors["pinyin"].text("");
 	}
 
 	function renderAnswer(answer, pinyin) {
