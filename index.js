@@ -89,6 +89,8 @@ $(document).ready(async function() {
 		"prompt": $("#prompt"),
 		"source": $("#source"),
 		"answer": $("#answer"),
+		"answerbox": $("#answerbox"),
+		"pinyin": $("#pinyin"),
 		"nextButton": $("#nextButton")
 	}
 
@@ -103,11 +105,14 @@ $(document).ready(async function() {
 		$selectors["prompt"].text(`[ ${word} ]`);
 		$selectors["source"].text(source);
 
-		$selectors["answer"].html("&nbsp");
+		// $selectors["answer"].html("&nbsp");
+		$selectors["answerbox"].text();
+		$selectors["pinyin"].text();
 	}
 
-	function renderAnswer(answer) {
-		$selectors["answer"].text(answer);
+	function renderAnswer(answer, pinyin) {
+		$selectors["answerbox"].text(answer);
+		$selectors["pinyin"].text(pinyin)
 	}
 
 	async function nextWord(...forced) {
@@ -132,7 +137,7 @@ $(document).ready(async function() {
 
 				break
 			case 1:
-				renderAnswer(cache[1]);
+				renderAnswer(cache[1], cache[3]);
 				state = 2;
 
 				triggered = false; // reset debounce
@@ -146,9 +151,8 @@ $(document).ready(async function() {
 				}
 				sessionObject.nextWord().then(d => {
 					cache = d;
-					console.log(d)
 
-					renderWord(d[0], d[2]);
+					renderWord(cache[0], cache[2]);
 					state = 1;
 
 					triggered = false; // reset debounce
