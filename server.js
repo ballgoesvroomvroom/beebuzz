@@ -7,7 +7,45 @@ const html = fs.readFileSync(__dirname +"/index.html", "utf-8");
 const css = fs.readFileSync(__dirname +"/index.css", "utf-8");
 const js = fs.readFileSync(__dirname +"/index.js", "utf-8");
 
-const words = fs.readFileSync(__dirname +"/words.txt", "utf-8");
+const preparsed_words = fs.readFileSync(__dirname +"/words.txt", "utf-8");
+
+function getPinyin(word) {
+	// only parse words that contains words only; not punctuations (may have unexpected behaviour)
+	var py = pinyin_lookup[word];
+	if (py == null) {
+		// no pinyin matching for this query (could be a very odd phrase)
+		// fallback to matching pinyin for individual word, not accurate (will implement another method soon)
+		var individual_py = ""; // build new pinyin
+		for (let i = 0; i < word.length; i++) {
+			var char = word[i]; // individual character from the query
+	
+			var char_py = pinyin_lookup[char];
+			if (char_py == null) {
+				individual_py += "- "; // represent not found for this word
+			} else {
+				individual_py += char_py +" ";
+			}
+		}
+	
+		py = individual_py.slice(0, -1); // remove trailing whitespace from last iteration
+	}
+
+	return py;
+}
+
+// parse words ('attach' pinyin to the end with delimiter ' : ')
+let words;
+let lines = preparsed_words.split(/\r?\n/gm);
+for (let i = 0; i < lines.length; i++) {
+	var line = lines[i];
+
+	var d = line.split(" : ");
+	var chineseWord = d[1];
+
+	words += line +` : ${getPinyin(chineseWord)}\n`;
+}
+// remove trailing whitespace else client will parse it as empty data and still display it
+words = words.slice(0, -1);
 
 const app = http.createServer((req, res) => {
 	if (req.url == "/index.js") {
@@ -27,24 +65,7 @@ const app = http.createServer((req, res) => {
 		let query = req.url.slice("/api/pinyin/?q=".length);
 		query = decodeURI(query); // query is urlsafe encoded by default
 
-		var py = pinyin_lookup[query];
-		if (py == null) {
-			// no pinyin matching for this query (could be a very odd phrase)
-			// fallback to matching pinyin for individual word, not accurate (will implement another method soon)
-			var individual_py = ""; // build new pinyin
-			for (let i = 0; i < query.length; i++) {
-				var char = query[i]; // individual character from the query
-
-				var char_py = pinyin_lookup[char];
-				if (char_py == null) {
-					individual_py += "- "; // represent not found for this word
-				} else {
-					individual_py += char_py +" ";
-				}
-			}
-
-			py = individual_py.slice(0, -1); // remove trailing whitespace from last iteration
-		}
+		py = getPinyin(query);
 
 		console.log(query, py)
 		if (py == null) {

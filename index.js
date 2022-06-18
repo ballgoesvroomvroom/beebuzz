@@ -64,21 +64,7 @@ class Session {
 			this.words.pop(); // more performant than .shift() apparently
 
 			let d = a.split(/\s*:\s*/gm);
-			return fetch("/api/pinyin/?q=" +d[1], {
-				method: "GET"
-			}).then(r => {
-				if (r.status == 200) {
-					// server will return "" if cannot find the pinyin for the word specified or malformed input etc
-					// just not an error status code
-					return r.text();
-				} else {
-					console.log("server returned status code != 200 while querying for pinyin")
-					return ""
-				}
-			}).then(pinyin => {
-				d.push(pinyin);
-				return d;
-			})
+			return new Promise(res => res(d));
 		}
 	}
 }
