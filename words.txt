@@ -41,6 +41,49 @@ easily suspicious of things : 疑心重 : 42
 temperamental / frequent mood swings : 情绪化 : 43
 bad tempered : 性格暴躁 : 44
 humorous : 风趣、幽默 : 45
+guilty : 愧疚 : translate.google.com
+review : 检讨 : translate.google.com
+disclose : 透露 : translate.google.com
+build : 兴建 : translate.google.com
+waste : 废物 : translate.google.com
+immediately : 立即 : translate.google.com
+he compromised with me : 他与我拖妥协 : translate.google.com
+never give up : 永不妥协 : translate.google.com
+appropriate : 妥当 : translate.google.com
+stay behind closed doors : 闭门不出 : translate.google.com
+benefit : 受惠 : translate.google.com
+conflict : 冲突 : translate.google.com
+anytime, anywhere : 随时随地 : translate.google.com
+occasionally : 偶一为之 : translate.google.com
+cyber bully : 网络恶霸 : translate.google.com
+sowing : 播种 : translate.google.com
+longing : 憧憬 : translate.google.com
+attack : 抨击 : translate.google.com
+cast aside : 唾弃 : translate.google.com
+estranged : 疏远 : translate.google.com
+smart and wise : 聪慧睿智 : translate.google.com
+specific : 具体 : translate.google.com
+find out : 摸透 : translate.google.com
+desire : 欲望 : translate.google.com
+strange vision : 异样眼光 : translate.google.com
+report : 举报 : translate.google.com
+work hard : 发奋 : translate.google.com
+make a fuss : 小题大做 : translate.google.com
+training : 培训 : translate.google.com
+supervise : 监督 : translate.google.com
+come into view : 映入眼帘 : translate.google.com
+slightly : 略微 : translate.google.com
+a handful : 屈指可数 : translate.google.com
+paradoxical : 自相矛盾 : translate.google.com
+backtracking : 出尔反尔 : translate.google.com
+say nothing : 言而不言 : translate.google.com
+silence : 寂静 : translate.google.com
+vice versa : 反之亦然 : translate.google.com
+dismissive : 不屑一顾 : translate.google.com
+narrow-minded : 心胸狭隘 : translate.google.com
+betray : 辜负 : translate.google.com
+stablize : 稳定 : translate.google.com
+likewise : 亦然 : translate.google.com
 ethereal : 虚幻飘渺 : translate.google.com
 like a cannonball : 连珠炮似地 : translate.google.com
 act without distractions : 行无旁骛 : translate.google.com
@@ -71,11 +114,11 @@ preference : 偏好 : translate.google.com
 a lot of people : 人声鼎沸 : translate.google.com
 loyalty : 义气 : translate.google.com
 serious : 严肃 : translate.google.com
-plain and boring : 平淡无味 : translate.google.com
+平淡无味 : plain and boring : translate.google.com
 actively : 踊跃 : translate.google.com
 pros and cons : 利与弊 : translate.google.com
 meet : 交汇 : translate.google.com
-stereotypes : 刻板印象 : translate.google.com
+刻板印象 : stereotypes : translate.google.com
 occlude : 遮挡 : translate.google.com
 abundant : 充裕 : translate.google.com
 my country environment agency : 我国环境局 : translate.google.com
