@@ -1,12 +1,13 @@
 const http = require("http");
+const path = require("path");
 const fs = require("fs");
 
+const publicpath = path.join(__dirname, "../public")
+const html = fs.readFileSync(path.join(publicpath, "/index.html"), "utf-8");
+const css = fs.readFileSync(path.join(publicpath, "/index.css"), "utf-8");
+const js = fs.readFileSync(path.join(publicpath, "/index.js"), "utf-8");
+
 const pinyin_lookup = require("./parsed_pinyin_lookup")
-
-const html = fs.readFileSync(__dirname +"/index.html", "utf-8");
-const css = fs.readFileSync(__dirname +"/index.css", "utf-8");
-const js = fs.readFileSync(__dirname +"/index.js", "utf-8");
-
 const preparsed_words = fs.readFileSync(__dirname +"/words.txt", "utf-8");
 
 function getPinyin(word) {
